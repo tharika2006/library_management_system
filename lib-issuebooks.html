@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management - Issue Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url("libpic6.jfif");
+        }
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background-color:rgb(219, 238, 220);
+            padding: 20px;
+           
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid rgb(219, 238, 220);
+            border-radius: 5px;
+        }
+        .form-group input[type="date"] {
+            padding: 8px;
+        }
+        .form-group input[type="submit"] {
+            background-color: rgb(9, 9, 105);
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>Issue a Book</h1>
+
+    <div class="container">
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="memberId">Member ID:</label>
+                <input type="text" id="memberId" name="memberId" required>
+            </div>
+            <div class="form-group">
+                <label for="memberName">Member Name:</label>
+                <input type="text" id="memberName" name="memberName" required>
+            </div>
+            <div class="form-group">
+                <label for="bookId">Book ID:</label>
+                <input type="text" id="bookId" name="bookId" required>
+            </div>
+            <div class="form-group">
+                <label for="bookTitle">Book Title:</label>
+                <input type="text" id="bookTitle" name="bookTitle" required>
+            </div>
+            <div class="form-group">
+                <label for="issueDate">Issue Date:</label>
+                <input type="date" id="issueDate" name="issueDate" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Issue Book">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

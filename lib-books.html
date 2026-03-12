@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management - Available Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url("libpic6.jfif");
+        }
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: rgb(4, 44, 103);
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: rgb(224, 224, 224);
+        }
+        tr:nth-child(odd) {
+            background-color: rgb(219, 238, 220);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Available Books in the Library</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>The Great Gatsby</td>
+                    <td>F. Scott Fitzgerald</td>
+                    <td>Fiction</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>1984</td>
+                    <td>George Orwell</td>
+                    <td>Dystopian</td>
+                    <td>Issued</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>The Kite Runner</td>
+                    <td>Khaled Hosseini</td>
+                    <td>Historical Fiction</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>The House Of Mango Street</td>
+                    <td>Sandra Cisneros</td>
+                    <td>Fiction</td>
+                    <td>Issued</td>
+                 </tr>
+                 <tr>
+                    <td>5</td>
+                    <td>The Grapes Of Wrath</td>
+                    <td>John Steinbeck</td>
+                    <td>Novel</td>
+                    <td>Issued</td>
+                 </tr>
+                 <tr>
+                    <td>6</td>
+                    <td>The Outsiders</td>
+                    <td>Stephan King</td>
+                    <td>Horror</td>
+                    <td>Available</td>
+                 </tr>
+                 <tr>
+                    <td>7</td>
+                    <td>The Old Man And The Sea</td>
+                    <td>Ernest Hemingway</td>
+                    <td>Literary Fiction</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Harry Potter</td>
+                    <td>J.K.Rowling</td>
+                    <td>Fantasy</td>
+                    <td>Available</td>
+                </tr>
+                
+        </tbody>
+    </table>
+
+    <section id="search">
+            <h2>Search Books</h2>
+            <form action="" method="get">
+                <label for="search">Enter book title or author:</label>
+                <input type="text" id="search" name="search" placeholder="Enter the book name">
+                <input type="submit" value="Search">
+            </form>
+    </section>
+    
+
+</body>
+</html>
